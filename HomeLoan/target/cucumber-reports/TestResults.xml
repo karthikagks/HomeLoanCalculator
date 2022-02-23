@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="76.883">
+    <testcase classname="Home Loan Assessment" name="Testing borrowing estimate calculation in home loan calculator." time="29.424">
+        <system-out><![CDATA[Given Navigate to home loan calculator......................................passed
+Given Enter the person details in home loan calculator......................passed
+Then Verify that borrowing estimate is displayed as "$479,000"..............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Home Loan Assessment" name="Testing start over button in home loan calculator." time="26.572">
+        <system-out><![CDATA[Given Navigate to home loan calculator......................................passed
+Given Enter the person details in home loan calculator......................passed
+And Click the start over button.............................................passed
+Then Verify that clicking start over button clears the form.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Home Loan Assessment" name="Testing borrowing estimate calculation by entering value only for living expenses and leaving all other fields as zero in home loan calculator will result in displaying error message." time="20.204">
+        <system-out><![CDATA[Given Navigate to home loan calculator......................................passed
+Given Enter the person living expenses as one in home loan calculator and Leave all other fields as zero.passed
+And Click the "Work out how much I could borrow" button.....................passed
+Then Verify that error message is displayed in home loan calculator upon entering value only for living expenses and leaving all other fields as zero.passed
+]]></system-out>
+    </testcase>
+</testsuite>
