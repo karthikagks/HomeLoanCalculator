@@ -1,0 +1,21 @@
+Questions
+
+1. What other tests would you suggest could be written? You do not need to write them out in details or code them.
+
+			-> Test the joint application type for residential investment purpose.
+			-> Test the joint application type for "Home to live in" purpose.
+			-> Test the single application type for residential investment purpose.
+			-> Test the single/joint application with all available combination of dependents.
+			-> Test the calculator by entering annual income as zero and leaving all other fields as zero and make sure error message is displayed.
+			-> Test the calculator by entering credit card limit as zero and leaving all other fields as zero and make sure error message is displayed.
+2. If this test was part of a much larger test set, how would you speed it up?
+
+			-> We can perform parallel execution and speed up the test.
+			
+3. Sometimes UI tests can fail unpredictably. For example, the page may not have fully loaded before test automation attempts to click a button on a webpage. How would you improve reliability of these tests?
+
+			-> we can get all the links available in webpage with help of selenium.
+			-> And test those links with RestAssured for making sure their responses are not broken i.e. 4XX,5XX etc.
+			-> Perform these test before starting UI test of webpage and proceed with the UI test only if links are not broken.
+			
+			
